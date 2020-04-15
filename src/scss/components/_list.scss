@@ -1,0 +1,64 @@
+@import "../base/variables";
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+  background-color: $color-grey;
+  margin: 3rem;
+
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 20rem;
+    margin: 3rem;
+    box-shadow: 0 0.7rem 1.2rem rgba($color-black, 0.2);
+    cursor: pointer;
+    // transition: all 0.3s;
+
+    // &:hover {
+    //   transform: translateY(-2px);
+    //   box-shadow: 0 1.4rem 2.4rem rgba($color-black, 0.2);
+    // }
+
+    &-left {
+      display: flex;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      margin: 2rem;
+      justify-content: space-between;
+
+      &--name {
+        display: flex;
+        align-self: center;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      &--description {
+        display: flex;
+        font-size: 1.6rem;
+        align-self: center;
+        text-align: center;
+      }
+      &--price {
+        display: flex;
+        font-size: 1.6rem;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  &__title {
+    display: flex;
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 0.7rem;
+    margin-left: 0.7rem;
+    margin-top: 3rem;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,39 @@
+.list__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20rem;
+  margin: 3rem;
+  box-shadow: 0 0.7rem 1.2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.list__card-left {
+  display: flex;
+}
+
+.list__card-right {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  justify-content: space-between;
+}
+
+.list__card-right--name {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.list__card-right--description {
+  display: flex;
+  font-size: 1.6rem;
+  align-self: center;
+  text-align: center;
+}
+.list__card-right--price {
+  display: flex;
+  font-size: 1.6rem;
+  align-self: flex-end;
+}

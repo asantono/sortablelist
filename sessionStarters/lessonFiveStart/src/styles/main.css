@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  overflow-x: hidden; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
+  background-color: #f7f7f7;
+  margin: 3rem; }
+
+.list__card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20rem;
+  margin: 3rem;
+  box-shadow: 0 0.7rem 1.2rem rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s; }
+
+.list__card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1.4rem 2.4rem rgba(0, 0, 0, 0.2); }
+
+.list__card-left {
+  display: flex; }
+
+.list__card-right {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  justify-content: space-between; }
+
+.list__card-right--name {
+  display: flex;
+  align-self: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800; }
+
+.list__card-right--description {
+  display: flex;
+  font-size: 1.6rem;
+  align-self: center;
+  text-align: center; }
+
+.list__card-right--price {
+  display: flex;
+  font-size: 1.6rem;
+  align-self: flex-end; }
+
+.list__title {
+  display: flex;
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 0.7rem;
+  margin-left: 0.7rem;
+  margin-top: 3rem;
+  justify-content: center; }
