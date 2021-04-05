@@ -1,3 +1,3 @@
-This was developed for a tutorial series located on YouTube.
+## Teaching Repository for my Lists series
 
-To run any of the sessionStarters, open it in your editor and type yarn into your terminal while in the sessions directory.
+Videos can be found here: [Lists Playlist](https://youtube.com/playlist?list=PL_kocBMOO_TzYhe9EczybRl_2gc3mWXTk)
